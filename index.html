@@ -305,6 +305,87 @@
       line-height: 1.6;
     }
 
+    /* Free Tools */
+    .free-tools-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .free-tool-card {
+      background: var(--bg-elevated);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .free-tool-card:hover {
+      border-color: rgba(34, 197, 94, 0.4);
+      box-shadow: 0 0 20px rgba(34, 197, 94, 0.08);
+    }
+
+    .free-tool-card .tool-icon {
+      font-size: 32px;
+      margin-bottom: 12px;
+    }
+
+    .free-tool-card h3 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .free-tool-card p {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      margin-bottom: 16px;
+      line-height: 1.5;
+    }
+
+    .free-tool-card .tool-links {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .free-tool-card .tool-links a {
+      font-size: 0.8125rem;
+      font-weight: 600;
+      text-decoration: none;
+      padding: 8px 16px;
+      border-radius: 6px;
+      transition: all 0.2s;
+    }
+
+    .free-tool-card .tool-links .try-btn {
+      background: #22c55e;
+      color: white;
+    }
+
+    .free-tool-card .tool-links .try-btn:hover {
+      background: #16a34a;
+    }
+
+    .free-tool-card .tool-links .buy-btn {
+      color: var(--text-muted);
+      border: 1px solid var(--border);
+    }
+
+    .free-tool-card .tool-links .buy-btn:hover {
+      color: var(--accent);
+      border-color: var(--accent);
+    }
+
+    .section-desc {
+      font-size: 1.0625rem;
+      color: var(--text-muted);
+      text-align: center;
+      max-width: 640px;
+      margin: -32px auto 40px;
+      line-height: 1.7;
+    }
+
     /* Existing Products */
     .existing-section {
       background: var(--bg-elevated);
@@ -418,7 +499,7 @@
       <p class="subtitle">Dashboards, financial models, and analytics tools built on frameworks from Uber-scale growth engineering.</p>
       <div class="hero-ctas">
         <a href="#products" class="cta">Browse Products</a>
-        <a href="#custom" class="cta cta-secondary">Get Custom Setup</a>
+        <a href="#free-tools" class="cta cta-secondary">10 Free Calculators</a>
       </div>
     </div>
   </header>
@@ -503,6 +584,105 @@
         </div>
         <div class="why-item">
           <span>Zero fluff — every metric has a formula, every chart has a purpose</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="free-tools">
+    <div class="container">
+      <h2>10 Free Interactive Calculators</h2>
+      <p class="section-desc">Try every calculator in your browser — no signup, no download. Upgrade to Excel for offline use and advanced features.</p>
+      <div class="free-tools-grid">
+        <div class="free-tool-card">
+          <div class="tool-icon">&#128293;</div>
+          <h3>FIRE Calculator Pro</h3>
+          <p>Monte Carlo simulations, coast FIRE, barista FIRE scenarios. Find your financial independence number.</p>
+          <div class="tool-links">
+            <a href="https://avishbhasin.github.io/clearmetric-fire-calculator/" target="_blank" class="try-btn">Try Free →</a>
+            <a href="https://clearmetric.gumroad.com/l/fire-calculator" class="buy-btn">Excel $14.99</a>
+          </div>
+        </div>
+        <div class="free-tool-card">
+          <div class="tool-icon">&#127968;</div>
+          <h3>Rent vs Buy Calculator</h3>
+          <p>30-year total cost comparison with appreciation, taxes, and opportunity cost analysis.</p>
+          <div class="tool-links">
+            <a href="https://avishbhasin.github.io/clearmetric-rent-vs-buy/" target="_blank" class="try-btn">Try Free →</a>
+            <a href="https://clearmetric.gumroad.com/l/rent-vs-buy" class="buy-btn">Excel $9.99</a>
+          </div>
+        </div>
+        <div class="free-tool-card">
+          <div class="tool-icon">&#127970;</div>
+          <h3>LLC vs S-Corp Tax Calculator</h3>
+          <p>Compare self-employment tax, reasonable salary, and total tax burden for your business.</p>
+          <div class="tool-links">
+            <a href="https://avishbhasin.github.io/clearmetric-llc-vs-scorp/" target="_blank" class="try-btn">Try Free →</a>
+            <a href="https://clearmetric.gumroad.com/l/llc-vs-scorp" class="buy-btn">Excel $12.99</a>
+          </div>
+        </div>
+        <div class="free-tool-card">
+          <div class="tool-icon">&#128187;</div>
+          <h3>Freelance Rate Calculator</h3>
+          <p>Factor in taxes, benefits, and overhead to find your true minimum viable hourly rate.</p>
+          <div class="tool-links">
+            <a href="https://avishbhasin.github.io/clearmetric-freelance-rate/" target="_blank" class="try-btn">Try Free →</a>
+            <a href="https://clearmetric.gumroad.com/l/freelance-rate" class="buy-btn">Excel $9.99</a>
+          </div>
+        </div>
+        <div class="free-tool-card">
+          <div class="tool-icon">&#128176;</div>
+          <h3>Side Hustle Tax Estimator</h3>
+          <p>Self-employment tax, quarterly payments, and deduction estimates for gig income.</p>
+          <div class="tool-links">
+            <a href="https://avishbhasin.github.io/clearmetric-side-hustle-tax/" target="_blank" class="try-btn">Try Free →</a>
+            <a href="https://clearmetric.gumroad.com/l/side-hustle-tax" class="buy-btn">Excel $11.99</a>
+          </div>
+        </div>
+        <div class="free-tool-card">
+          <div class="tool-icon">&#128663;</div>
+          <h3>Car Affordability Calculator</h3>
+          <p>20/4/10 rule. Loan payments, insurance, fuel, and total cost of ownership.</p>
+          <div class="tool-links">
+            <a href="https://avishbhasin.github.io/clearmetric-car-affordability/" target="_blank" class="try-btn">Try Free →</a>
+            <a href="https://clearmetric.gumroad.com/l/car-affordability" class="buy-btn">Excel $8.99</a>
+          </div>
+        </div>
+        <div class="free-tool-card">
+          <div class="tool-icon">&#127961;</div>
+          <h3>Cost of Living Comparator</h3>
+          <p>Compare 30+ US cities — housing, food, transport, healthcare, and taxes.</p>
+          <div class="tool-links">
+            <a href="https://avishbhasin.github.io/clearmetric-cost-of-living/" target="_blank" class="try-btn">Try Free →</a>
+            <a href="https://clearmetric.gumroad.com/l/cost-of-living" class="buy-btn">Excel $9.99</a>
+          </div>
+        </div>
+        <div class="free-tool-card">
+          <div class="tool-icon">&#128640;</div>
+          <h3>Startup Runway Calculator</h3>
+          <p>Model burn rate, revenue growth, and funding scenarios to plan your cash runway.</p>
+          <div class="tool-links">
+            <a href="https://avishbhasin.github.io/clearmetric-startup-runway/" target="_blank" class="try-btn">Try Free →</a>
+            <a href="https://clearmetric.gumroad.com/l/startup-runway" class="buy-btn">Excel $14.99</a>
+          </div>
+        </div>
+        <div class="free-tool-card">
+          <div class="tool-icon">&#128200;</div>
+          <h3>Stock Options Calculator</h3>
+          <p>ISO vs NSO exercise strategies, AMT impact, and tax optimization scenarios.</p>
+          <div class="tool-links">
+            <a href="https://avishbhasin.github.io/clearmetric-stock-options/" target="_blank" class="try-btn">Try Free →</a>
+            <a href="https://clearmetric.gumroad.com/l/stock-options" class="buy-btn">Excel $16.99</a>
+          </div>
+        </div>
+        <div class="free-tool-card">
+          <div class="tool-icon">&#128141;</div>
+          <h3>Wedding Budget Planner</h3>
+          <p>Track vendors, payments, and budget by category with visual breakdowns.</p>
+          <div class="tool-links">
+            <a href="https://avishbhasin.github.io/clearmetric-wedding-budget/" target="_blank" class="try-btn">Try Free →</a>
+            <a href="https://clearmetric.gumroad.com/l/wedding-budget" class="buy-btn">Excel $14.99</a>
+          </div>
         </div>
       </div>
     </div>
